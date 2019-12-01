@@ -1,0 +1,91 @@
+.btn-main {
+  border-radius: 3px;
+  background-color: #aa9b77;
+  line-height: 52px;
+  padding: 0 33px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  font-family: "Quicksand Bold";
+  font-style: normal;
+  &:hover {
+    background-color: #535253;
+  }
+}
+
+.slider-filter {
+  background-color: #f5f6f7;
+  padding: 45px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  label {
+    font-size: 18px;
+    color: #333333;
+    text-transform: uppercase;
+  }
+
+  input[type=checkbox] {
+    background-color: #fff;
+    border-radius: 2px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid #aa9b77;
+    margin-right: 18px;
+  }
+
+  input[type=checkbox]:checked {
+    background: url(../../assets/img/input.jpg) 50% 50% no-repeat;
+  }
+
+  .form-field {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+  }
+
+  .btns-filter-block {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .slider-filter {
+    padding: 15px 0;
+    label {
+      font-size: 13px;
+    }
+    input[type=checkbox] {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+    .form-field {
+      margin-right: 15px;
+    }
+  }
+  .btn-main {
+    line-height: 38px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  .slider-filter {
+    .container{
+      flex-direction: column;
+    }
+    .form-field {
+      margin-bottom: 15px;
+    }
+  }
+}

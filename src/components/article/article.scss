@@ -1,0 +1,19 @@
+.article {
+  background-color: #535253;
+  padding: 25px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  article {
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+  }
+  img {
+    margin-right: 20px;
+    width: 29px;
+    height: auto;
+  }
+}
