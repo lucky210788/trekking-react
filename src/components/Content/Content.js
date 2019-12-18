@@ -1,9 +1,9 @@
 import React, {Component} from "react";
-import SliderFilter from '../SliderFilter/SliderFilter';
-import Slider from '../Slider/Slider';
+import SliderFilter from './SliderFilter/SliderFilter';
+import Slider from './Slider/Slider';
 import {men, women, children} from './dataProducts';
 
-import './content.scss';
+import './Content.scss';
 
 export default class Content extends Component {
   constructor() {
@@ -29,7 +29,8 @@ export default class Content extends Component {
           location: 'center'
         },
       ]
-    }
+    };
+    this.sectionContent = React.createRef();
   }
 
   onHandleFilter = (newFilter) => {
@@ -55,7 +56,7 @@ export default class Content extends Component {
   };
 
   componentDidMount() {
-    this.props.findContent(document.querySelector('.content'));
+    this.props.findContent(this.sectionContent.current);
   }
 
   render() {
@@ -67,7 +68,7 @@ export default class Content extends Component {
       }
     });
     return (
-      <section className="content">
+      <section className="content" ref={this.sectionContent}>
         <SliderFilter onHandleFilter={this.onHandleFilter}
                       filtres={this.state.filtres}
                       handleAllProducts={this.handleAllProducts}/>

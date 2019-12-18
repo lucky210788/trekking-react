@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './article.scss';
+import './Article.scss';
 
 export default function Article() {
   return (

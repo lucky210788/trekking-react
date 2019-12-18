@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './mainNav.scss';
+import './MainNav.scss';
 
 export default function MainNav() {
   return (

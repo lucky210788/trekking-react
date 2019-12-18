@@ -1,7 +1,7 @@
 import React from "react";
 
 import MainNav from '../MainNav/MainNav'
-import './welcomeSection.scss';
+import './WelcomeSection.scss';
 
 export default function WelcomeSection(props) {
   return (

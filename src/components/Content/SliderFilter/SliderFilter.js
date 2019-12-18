@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-import './sliderFilter.scss';
+import './SliderFilter.scss';
 
 export default class SliderFilter extends Component {
   handleFilter = (filter) => {

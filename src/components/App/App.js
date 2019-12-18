@@ -5,8 +5,8 @@ import Content from '../Content/Content';
 import AboutUs from '../AboutUs/AboutUs';
 import Article from '../Article/Article';
 import Footer from '../Footer/Footer';
-import './fonts.scss';
-import './reset.scss';
+import './Fonts.scss';
+import './Reset.scss';
 
 export default class App extends Component {
   constructor() {
